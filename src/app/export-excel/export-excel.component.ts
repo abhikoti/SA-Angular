@@ -47,8 +47,8 @@ export class ExportExcelComponent  implements OnInit {
     Win: 6,  
     Loss: 1,  
     Cancel: 1,  
-    Point: 13  
-  
+    Point: 13   
+   
   },  
   {  
     Sno: '3',  
