@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class UserService {
 
   private baseURL = "https://localhost:7216/api/";
-  constructor(private httpClient: HttpClient) { }
+  constructor(private Client: HttpClient) { }
 
 
   IsUserCheck(): Observable<any[]>{
@@ -16,7 +16,7 @@ export class UserService {
     params = params.append('username', 'val1');
     params = params.append('password', 'val2');
 
-    return this.httpClient.get<any[]>(`${this.baseURL}`+'Mobileshop/IsUserCheck',{params});
+    return this.Client.get<any[]>(`${this.baseURL}`+'Mobileshop/IsUserCheck',{params});
   }
 
 
