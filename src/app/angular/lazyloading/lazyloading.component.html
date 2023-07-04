@@ -1,0 +1,38 @@
+<p>lazyloading works!</p>
+
+  <!--   add Module :
+
+ng g module angular --routing
+
+add component in angular module :
+
+ng g component angular/home 
+
+add following in angular-routing.ts file 
+
+const routes: Routes = [ 
+  {path : '', component : HomeComponent},
+];
+
+
+add following in app-routing-module.ts file
+
+const routes: Routes = [
+  {path : '', component : TestComponent},
+
+
+  
+ {path: 'admin',  loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },   // Lazy loading reference admin
+ {path: 'sql',  loadChildren: () => import('./sql/sql.module').then(m=>m.SqlModule) } , // Lazy loading reference sql
+ {path: 'angular',  loadChildren: () => import('./angular/angular.module').then(m=>m.AngularModule) } ,  // Lazy loading reference angular
+];
+
+
+add following line in app.component.html
+
+
+  <!-- <p> <button type="button" routerLink="/angular">Angular</button>  -->
+
+
+
+     -->

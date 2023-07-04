@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'SA-Angular';
+  welcome='WELCOME TO AKR-TUTORIAL';
+
+
+
+
 }
